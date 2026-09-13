@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordförge — The Locksmith's Trial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <div class="atmosphere"></div>
+      <header id="topbar">
+        <div class="brand" id="brand-home" title="Back to chapters"><img src="assets/guild-crest.webp" alt="Guild crest"><div><small>THE LOCKSMITH GUILD</small><strong>ORDFÖRGE</strong></div></div>
+        <div class="journey" aria-label="Journey progress">
+          <div class="journey-step active" data-step="assessment"><i>1</i><span>Assessment</span></div><b></b>
+          <div class="journey-step" data-step="training"><i>2</i><span>Training</span></div><b></b>
+          <div class="journey-step" data-step="mastery"><i>3</i><span>Mastery</span></div>
+        </div>
+        <button id="mute-btn" class="icon-btn" aria-label="Mute audio">♪</button>
+      </header>
+      <main id="stage"></main>
+      <div id="toast" role="status"></div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
